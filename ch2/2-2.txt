@@ -1,0 +1,5 @@
+myfst (3, 4 div 0)
+
+=> 3
+
+(4 div 0 never evaluated so divide by 0 error never thrown)
