@@ -1,0 +1,20 @@
+>|| Exercise 3.3
+>|| States the consequences of hd and tl evaluating to [] when given [] as input
+
+If tl returned [] on an empty list input it would be impossible to distinguish between a list with 1 element (excluding []) and one with none
+i.e.
+
+tl [1]
+=> []
+
+tl []
+=> []
+
+If hd returned [] on an input of [] it would be ambiguous with lists of lists starting with []
+i.e.
+
+hd [[], [1,2]]
+=> []
+
+hd []
+=> []
