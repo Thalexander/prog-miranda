@@ -1,0 +1,21 @@
+>|| Exercise 3.2
+>|| Defines which of the example list constructors are legal
+
+list 1 = 1 : []
+LEGAL
+=> [1]
+
+
+list2 = 1 : [] : []
+ILLEGAL
+
+list3 = 1 : [1]
+LEGAL
+=> [1,1]
+
+list4 = [] : [1]
+ILLEGAL
+
+list5 = [1] : [1] : []
+LEGAL
+=> [[1],[1]]
