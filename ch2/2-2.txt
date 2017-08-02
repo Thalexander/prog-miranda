@@ -1,5 +1,7 @@
-myfst (3, 4 div 0)
+>|| Exercise 2.2
+>|| States what happens when myfst (3, 4 div 0) is evaluated
 
+myfst (3, 4 div 0)
 => 3
 
 (4 div 0 never evaluated so divide by 0 error never thrown)
