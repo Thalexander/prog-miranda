@@ -1,4 +1,4 @@
-My answers to the exercises provided in 'Programming in Miranda' by Chris Clack, Colin Myers & Ellen Poon.
+My answers to the exercises provided in 'Programming with Miranda' by Chris Clack, Colin Myers & Ellen Poon.
 
 The authors of which have kindly made the book available for free at http://www.cs.ucl.ac.uk/teaching/3C11/book/book.html
 
