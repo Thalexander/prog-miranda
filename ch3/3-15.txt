@@ -1,0 +1,8 @@
+>|| Exercise 3.15
+>|| Explains what would happen if the second and third pattern in startswith were swapped
+
+> startswith (("ONCE", ch) : regrest, []) = False
+> startswith (("ZERO_MORE", ch) : regrest, []) = startswith (regrest, [])
+
+Nothing would happen if they were swapped as they match with constant values that are exclusive so anything that matches to one will not match to the other, there is no overlap.
+
