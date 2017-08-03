@@ -1,0 +1,14 @@
+>|| Exercise 4.1
+>|| Gives the types of the example compositions
+
+> tl . (++ [])
+:: [*] -> [*]
+
+> abs . fst
+:: [num] -> num
+
+> code . code
+Not possible
+
+> show . tl
+:: [*] -> [char]
