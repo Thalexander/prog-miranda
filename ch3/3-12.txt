@@ -1,0 +1,6 @@
+>|| Exercise 3.12
+>|| Explains why sublist needs its first function pattern despite it also being checked for as the first patter in startswith, and also whether the second pattern of sublist can be safely removed
+
+Whilst startwith does check for the empty pattern, the second case would match in the case when ([], []) is the input and incorrectly return false, so the pattern needs to exist to prevent this error.
+
+startswith does catch and correctly return False to the case that the line is empty, however this will then cause sublist to attempt to call on the tl of an empty list, which would throw an error, so the second pattern also needs to bet there.
