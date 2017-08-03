@@ -1,0 +1,4 @@
+>|| Exercise 4.3
+>|| Explains why make_curried cannot be generalised to work for functions with an arbitrary number of tuple components
+
+Each different size of tuple is its own type, whilst it is possible to be polymorphic over the types within the tuple, it is not possible to be polymorphic over the length whilst using the internal contents.
