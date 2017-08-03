@@ -1,0 +1,4 @@
+>|| Exercise 3.7
+>|| States what happens when a negative value of n is suplied to the first version of mydrop
+
+n will keep being decremented each call, however it will never reach 0, so the function will only terminate when the list is empty
