@@ -1,0 +1,8 @@
+>|| Exercise 3.14
+>|| Explains the presence of the final pattern in the function startswith, even though it should never be encountered.
+
+> startwsith any = error "startswith"
+
+This error allows for easier debugging, so that the developer knows that an incorrect input has been provided, this is particularly important given the strings being used to represent ONCE and ZERO_MORE as opposed to a custom type, which can lead to typos that would be harder to find otherwise.
+
+
