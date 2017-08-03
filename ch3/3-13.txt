@@ -1,0 +1,16 @@
+>|| Exercise 3.13
+>|| Explains why the attempt to optimise the startswith program is incorrect
+
+> sublist :: ([char], [char]) -> bool
+> sublist ([], any) = True
+> sublist (any, []) = False
+> sublist ((regfront : regrest), (lfront: lrest)) = ((regfront = lfront) & sublist (regrest, lrest)) \/ sublist (regfront : regrest, lrest)
+
+In the case of sublist ("100", "1200")
+=> (("1" = "1") & sublist ("00", 200")) \/ sublist ("100", "200")
+=> True & ((("0" = "2") & sublist ("0", "00")) \/ sublist ("00", "00")) \/ sublist ("100", "200")
+as the "0" = "2" fails, the & shortcuts and doesn't evaluate the second argument
+=> True & (sublist ("00", "00")) \/ sublist ("100", "200")
+Sublist will return True for ("00", "00") and the disjunction will shortcut based on the first parameter evaluating as True, in reuslt sublist will return True for ("100", "1200") incorrectly.
+
+As long as the characters exist in the correct order in the line it will return True, regardless of the characters in between them. 
