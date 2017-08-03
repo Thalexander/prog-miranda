@@ -1,0 +1,12 @@
+>|| Exercise 4.10
+>|| Explains why the example definitions are equivalent
+
+> f1 x alist = map (plus x) alist
+
+> f2 x = map (plus x)
+
+This function removes the last paremeter from f1 and partially applies the map function as a result f2 is a partially applied function that will take a list and so functions the same as f1
+
+> f3 = (map . plus)
+
+Similarly to the last case this removes a further parameter from f2, now function composition is used so that the first argument provided works as the number x, and then map is partially applied to that, and then when a further list is provided the result will be the same as that of f1 and f2
