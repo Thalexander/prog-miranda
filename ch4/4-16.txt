@@ -1,0 +1,4 @@
+>|| Exercise 4.16
+>|| Explains why an equivalent version of stringsort using accumulate would require the arguments to (insert lessthan) be reversed
+
+The default value in the reduce is the empty list, in accumulate this would attempt to compare the first item of the list with empty list, which would work in select cases but not in general so the arguments need to be swapped
