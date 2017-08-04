@@ -1,0 +1,6 @@
+>|| Exercise 4.18
+>|| States the purpose of the function guesswhat
+
+> guesswhat = (foldr (+) 0) . (foldr ((:).((#).(:[]))) [])
+
+Replaces every value in the list with 1 by reconstructing it, and then adds them together in the fold, this makes it equivalent to the # operator, but defined using itself...
