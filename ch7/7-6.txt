@@ -1,0 +1,4 @@
+>|| Exercise 7.6
+>|| Defines the consequences of the alternative representation of the Atree
+
+The ordering function would be embedded at every node in the tree and not just at the root
