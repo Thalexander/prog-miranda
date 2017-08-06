@@ -1,0 +1,11 @@
+>|| Exercise 7.2
+>|| Provides an abstract type definition for a date
+
+> abstype date
+> where
+>     makeDate :: num -> num -> num -> date
+>     lessDate :: date -> date -> bool
+>     moreDate :: date -> date -> bool
+>     addDate :: date -> date -> date
+>     minusDate :: date -> date -> date
+>     leapDate :: date -> bool
