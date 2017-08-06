@@ -1,0 +1,4 @@
+>|| Exercise 6.4
+>|| Explains why it is not sensible  to attempt to mirror the tree data structure using nested lists
+
+Assuming a representation of the form [[],[6],[]] to represent the single element 6, it is not a very natural form to use and it will require the type to be defined in advance in order to define the depth, whereas an algebraic tree type can allow a dynamic depth.
