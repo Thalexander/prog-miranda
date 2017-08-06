@@ -1,0 +1,6 @@
+>|| Exercise 6.6
+>|| States the consequences of writing the function list_to_tree using reduce instead of foldl
+
+> list_to_tree order = reduce (insertleaf order) Tnil
+
+This will fail as the types will be the wrong way around as it goes from the left, rather than the right
