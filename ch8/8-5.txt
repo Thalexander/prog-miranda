@@ -1,0 +1,6 @@
+>|| Exercise 8.5
+>|| Explains why it is necessary for check to have a where block, and why confirm is repeatedly applied within acknowledge
+
+Check has a where block to pattern match the input as it needs to print menu3 before evaluating the user input.
+
+Acknowledge repeatedly applies confirm in order to provide the correct response based on the user input, the confirm couldn't be added a single time and then match in a where block as it would start to print before the user had inputted anything
