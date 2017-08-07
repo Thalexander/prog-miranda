@@ -1,0 +1,4 @@
+>|| Exercise 8.4
+>|| Explains why the example vend code is incorrect
+
+The input has to be scanned before printing the welcome message as the guard has to evaluate sel before it can evaluate the result
